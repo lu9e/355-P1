@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men</title>
+    <link href="men.css" rel="stylesheet" type="text/css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html"><img id="logo"src="../imgs/logo.png" alt="Checkout Bag"></a></li>
+            <li><a href="men.html">Men's</a></li>
+            <li><a href="../woman/women.html">Women's</a></li>
+            <li><a href="../Sale/sale.html">Sale</a></li>
+            <li><a href="#">Sign in<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></a></li>
+            <li>
+                <div class="search">
+                    <input type="text" class="input" placeholder="Search.." autofocus>
+                    <button class="btn" autofocus>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </li>
+            <li onclick=checkOut()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a></li>
+        </ul>
+
+        <ul class="CO">
+            <li onclick=closeCo()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="27" viewBox="0 -960 960 960" width="27"><path d="M400-120 160-360l241-241 56 57-144 144h367v-400h80v480H313l144 143-57 57Z"/></svg></a></li>
+            <li><span id = "cartInfo">Buy Something or your.....</span> </li>
+            <li>
+                <div class="container3">
+                    <h1>Free Shipping:</h1>
+                    <div class="progressC">
+                        <div class="progress" id="progress"></div>
+                        <div class="circle active">$0.0</div>
+                        <div class="circle">$25.00</div>
+                        <div class="circle">$50.00</div>
+                        <div class="circle">$100.00</div>
+                    </div>
+            
+                <button class="btn3" id="prev" disabled>-1</button>
+                <button class="btn3" id="next">+1</button>
+                </div>
+            </li>
+            <li><button class="submitB" type="submit">Check Out</button></li>
+        </ul>
+    </nav>
+
+
+    <div class="wrapper">
+        <div class="side-nav">
+            <ul>
+                <li><a href="#intro"> Category: </a> <i class="fas fa-plus"></i></li>
+                <li><a href="#intro"> Bottoms </a> <i class="fas fa-plus"></i></li>
+                <li><a href="#intro"> Tops </a> <i class="fas fa-plus"></i></li>
+                <li><a href="#intro"> Sweaters </a> <i class="fas fa-plus"></i></li>
+                <li><a href="#progress"> My Progress</a> <i class="fas fa-plus"></i></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <section id="intro">
+                <h2>Men</h2>
+
+                <div class="dropdown">
+                    <div class="select" id="sortButton">
+                        <button class="dropbtn">SORT</button>
+                        <div class="caret"></div>
+                    </div>
+
+                    <ul class="menu">
+                        <li class="active"><a href="#">Low-High</a></li>
+                        <li><a href="#">High-Low</a></li>
+                    </ul>
+                </div>
+
+                <div class="container2">
+
+                    <div class="gallery">
+                        <img src="../imgCloth/manP1.PNG" alt="tester" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+                        <div class="item">Top 1</div>
+                    </div>
+
+                    <div class="gallery">
+                        <img src="../imgCloth/manP1.PNG" alt="tester" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+                        <div class="item">Top 2</div>
+                    </div>
+
+
+                    <div class="gallery">
+                        <img src="../imgCloth/manP1.PNG" alt="tester">
+                        <div class="item">Top 3</div>
+                    </div>
+
+                    <div class="gallery">
+                        <img src="../imgCloth/manP1.PNG" alt="tester" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+                        <div class="item">Top 4</div>
+                    </div>
+
+                    <div class="gallery">
+                        <img src="../imgCloth/manP1.PNG" alt="tester" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+                        <div class="item">Top 5</div>
+                    </div>
+
+
+                    <div class="gallery">
+                        <img src="../imgCloth/manP1.PNG" alt="tester" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+                        <div class="item">Top 6</div>
+                    </div>
+
+                    <div class="gallery">
+                        <img src="../imgCloth/manP1.PNG" alt="tester" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+                        <div class="item">Top 7</div>
+                    </div>
+
+                    <div class="gallery">
+                        <img src="../imgCloth/manP1.PNG" alt="tester" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+                        <div class="item">Top 8</div>
+                    </div>
+
+                    <div class="gallery">
+                        <img src="../imgCloth/manP1.PNG" alt="tester" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+                        <div class="item">Top 9</div>
+                    </div>
+                </div>
+
+                <div id="next">
+                    <button>Next </button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+
+        <div class="fcontainer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Comp</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Payment privacy</a></li>
+                        <li><a href="#">ijff</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>help</h4>
+                    <ul>
+                        <li><a href="#">Customer Service </a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Number Tracker</a></li>
+                        <li><a href="#">Billing information</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>online survey</h4>
+                    <ul>
+                        <li><a href="#">sdsd</a></li>
+                        <li><a href="#">sdsd</a></li>
+                        <li><a href="#">sdsdd</a></li>
+                        <li><a href="#">ddss</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>By: Victor Martinez</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <script src="men.js"></script>
+</body>
+</html>

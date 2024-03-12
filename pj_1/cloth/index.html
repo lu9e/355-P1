@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+   <link href="footer.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img id="logo"src="imgs/logo.png" alt="logo"></a></li>
+            <li><a href="men/men.html">Men's</a></li>
+            <li><a href="woman/women.html">Women's</a></li>
+            <li><a href="Sale/sale.html">Sale</a></li>
+            <li><a href="#">Sign in<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></a></li>
+            <li>
+                <div class="search">
+                    <input type="text" class="input" placeholder="Search.." autofocus>
+                    <button class="btn" autofocus>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </li>
+            <li onclick=checkOut()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a></li>
+        </ul>
+
+        <ul class="CO">
+            <li onclick=closeCo()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="27" viewBox="0 -960 960 960" width="27"><path d="M400-120 160-360l241-241 56 57-144 144h367v-400h80v480H313l144 143-57 57Z"/></svg></a></li>
+            <li><span id = "cartInfo">Buy Something.....</span> </li>
+            <li>
+                <div class="container3">
+                    <h1>Free Shipping:</h1>
+                    <div class="progressC">
+                        <div class="progress" id="progress"></div>
+                        <div class="circle active">$0.0</div>
+                        <div class="circle">$25.00</div>
+                        <div class="circle">$50.00</div>
+                        <div class="circle">$100.00</div>
+                    </div>
+            
+                <button class="btn3" id="prev" disabled>-1</button>
+                <button class="btn3" id="next">+1</button>
+                </div>
+            </li>
+            <li><button class="submitB" type="submit">Check Out</button></li>
+        </ul>
+    </nav>
+
+
+
+
+    <div class="main-content">
+        <div class="photoG">
+            <div class="picP">
+                <img src ="imgCloth/model3.PNG" height="780px" width="600px" >
+            </div>
+            <div class="picP">
+                <img src ="imgCloth/model5.PNG" height="780px" width="900px">
+            </div>
+        </div>
+    
+    
+        <div class="photoG2">
+            <div class="picP2">
+                <img src ="imgCloth/model2.PNG" height="780px" width="440px" >
+            </div>
+    
+            <div class="picP2">
+                <img src ="imgCloth/model6.PNG" height="780px" width="450px">
+            </div>
+        </div>
+    
+        <div class="picContainer">
+            <div class="text-overlay" id="textOverlay1">
+                <h1><span id="2">THE MOG </span></h1>
+                <h3><span id="3">SPRING 2024 Collection</span></h3>
+                <p>Mеперь купи это сейчас Mеперь купи это сейча </p>
+                <button id="textB">возьми</button>
+            </div>
+        </div>
+    
+    
+    
+        <div class="singleImage">
+            <img src="imgCloth/runway.PNG" alt="accessory promotion" width="1390px">
+        </div>
+    
+        <div class="picContainer2">
+            <div class="text-overlay2" id="textOverlay2">
+                <h2><span id="2">Winter Sale,..,.,. </span></h2>
+                <p>Mеперь купи это сейчас Mеперь купи это сейча </p>
+                <button id="textB"><a href="../Sale/sale.html">возьми</a></button>
+            </div>
+        </div>
+    
+    
+        <div class="slider-container">
+            <h1>новые поступления</h1>
+            <div class="slider-wrapper">
+                <div class="slide">
+                    <img src="imgCloth/pants1.PNG" alt="Image 1" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+                    <p>PANTS 1</p>
+                </div>
+                <div class="slide">
+                    <img src="imgCloth/wtop1.PNG" alt="Image 2" onmouseover="changeImage2(this)" onmouseout="restoreImage2(this)">
+                    <p>TOP 1</p>
+                </div>
+                <div class="slide">
+                    <img src="imgCloth/top2.PNG" alt="Image 3" onmouseover="changeImage3(this)" onmouseout="restoreImage3(this)">
+                    <p>TOP 2</p>
+                </div>
+                <div class="slide">
+                    <img src="imgCloth/wtop2.PNG" alt="Image 4" onmouseover="changeImage4(this)" onmouseout="restoreImage4(this)">
+                    <p>T 3</p>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button onclick="prevSlide()">&#10094;</button>
+                <button onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <h2 class="sH">Store Hours: </h2>
+    <table class="Ta">
+        <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <tr>
+            <td>9am-7pm</td>
+            <td>9am-7pm</td>
+            <td>9am-7pm</td>
+            <td>9am-7pm</td>
+            <td>9am-2pm</td>
+            <td>CLOSED</td>
+            <td>CLOSED</td>
+        </tr>
+
+    </table>
+
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer class="footer">
+        <div class="fcontainer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Comp</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Payment privacy</a></li>
+                        <li><a href="#">ijff</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>help</h4>
+                    <ul>
+                        <li><a href="#">Customer Service </a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Number Tracker</a></li>
+                        <li><a href="#">Billing information</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>online survey</h4>
+                    <ul>
+                        <li><a href="#">sdsd</a></li>
+                        <li><a href="#">sdsd</a></li>
+                        <li><a href="#">sdsdd</a></li>
+                        <li><a href="#">ddss</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>By: Victor Martinez</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
